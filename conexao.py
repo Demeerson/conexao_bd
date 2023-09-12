@@ -7,10 +7,10 @@ import getpass
 
 
 # Arquivo JASON com as credenciais para conexão com o API do googlesheet
-gc = gs.service_account(filename="D:\Documentos\Documents\Acp - PBI\chave.json")
+gc = gs.service_account(filename="SEU_ARQUIVO_JSON")
 
 # Abrindo a planilha do googlesheets
-dados = gc.open_by_url("https://docs.google.com/spreadsheets/d/16jhJ7M97Ldf4DzIHCM698uNdzLGG0ApblhOH-hhpMFQ/edit#gid=0").\
+dados = gc.open_by_url("LINK_DA_PLANILHA").\
 worksheet("Página1")
 
 # Obtendo os dados
